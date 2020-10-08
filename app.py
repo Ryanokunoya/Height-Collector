@@ -9,8 +9,6 @@ from sqlalchemy.sql import func
 from send_email import send_email
 
 app = Flask(__name__)
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://edxbuzcmhlvutv:e4ceb0c18ec64e1744db1ebcd0143a73bb00e85fc613e1aa2a048c537ffac832@ec2-34-192-122-0.compute-1.amazonaws.com:5432/d7bsc0jsrbp15c'
 db = SQLAlchemy(app)
