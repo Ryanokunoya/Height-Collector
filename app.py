@@ -7,7 +7,7 @@ from send_email import send_email
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ozklbilzrptqdb:817680c4933262eef4c29871b50e687c00bbb98a25a0cfca88bb58048f0ce753@ec2-107-20-15-85.compute-1.amazonaws.com:5432/dd6mmg7pgn4kh6?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://edxbuzcmhlvutv:e4ceb0c18ec64e1744db1ebcd0143a73bb00e85fc613e1aa2a048c537ffac832@ec2-34-192-122-0.compute-1.amazonaws.com:5432/d7bsc0jsrbp15c?sslmode=require'
 db = SQLAlchemy(app)
 
 
